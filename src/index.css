@@ -7,3 +7,10 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+:where(.css-dev-only-do-not-override-1vr7spz).ant-tabs-left
+  > .ant-tabs-content-holder
+  > .ant-tabs-content
+  > .ant-tabs-tabpane {
+  padding-left: 0;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { userLocalStorage } from "../../api/localService";
 
 const Header = () => {
@@ -38,7 +38,11 @@ const Header = () => {
   return (
     <div className="flex items-center h-20 shadow-lg ">
       <div className="container flex items-center justify-between">
-        <span>CyberFlix</span>
+        <NavLink to={"/"}>
+          <span className="text-3xl font-semibold text-red-500 animate-pulse">
+            CyberFlix
+          </span>
+        </NavLink>
         <div className="space-x-5">{renderUserNav()}</div>
       </div>
     </div>
